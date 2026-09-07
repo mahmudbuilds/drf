@@ -44,10 +44,18 @@ INSTALLED_APPS = [
     'rest_framework',
     'product_app',
     'accounts',
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
+    'corsheaders'
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://[IP_ADDRESS]",
+    "https://gstore-api-1.vercel.app"
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
