@@ -1,0 +1,38 @@
+# Environments & Secrets (CRITICAL: Never commit these)
+.env
+.env.*
+!.env.example
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+venv/
+env/
+ENV/
+api_venv/
+env.bak/
+venv.bak/
+
+# Django static files & media
+staticfiles/
+media/
+*.log
+
+# SQLite database files (if you ever test locally)
+*.sqlite3
+*.db
+
+# Vercel deployment artifacts
+.vercel/
+
+# Operating System & IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
